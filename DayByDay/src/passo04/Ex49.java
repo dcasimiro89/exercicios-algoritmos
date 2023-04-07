@@ -24,7 +24,7 @@ public class Ex49 {
             }
             i++;
         }
-        
+
         System.out.println();
         i = 0;
         while (i < 6) {

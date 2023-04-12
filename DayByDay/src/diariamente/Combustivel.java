@@ -9,7 +9,7 @@ public class Combustivel {
 
         while(true) {
             System.out.println();
-            System.out.println("==========MENU==========");
+            System.out.println("===============MENU=============");
             System.out.println("[1] Consumo veicular");
             System.out.println("[2] Cálculo Combustível por KM");
             System.out.println("[3] Sair");
@@ -41,7 +41,7 @@ public class Combustivel {
         System.out.print("Digite quantos km rodados: ");
         double km = sc.nextDouble();
         double resultado = km / litrosAbastecidos;
-        System.out.println(String.format("\nMédia do véiculo é de %.2f l", resultado));
+        System.out.printf("\nMédia do véiculo é de %.2f l%n", resultado);
     }
 
     public static void calcularViagem() {

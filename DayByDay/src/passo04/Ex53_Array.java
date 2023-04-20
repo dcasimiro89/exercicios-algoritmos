@@ -2,7 +2,7 @@ package passo04;
 
 import java.util.Scanner;
 
-public class Ex53 {
+public class Ex53_Array {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -14,32 +14,32 @@ public class Ex53 {
         double mediaGrupo;
         double mediaHomem;
 
-        char genero;
-        int idade = 0;
+        char[] genero = new char[5];
+        int[] idade = new int[5];
 
         int i = 0;
         while (i < 5) {
             System.out.print("Qual o seu gênero [m/f] => ");
-            genero = sc.next().charAt(0);
+            genero[i] = sc.next().charAt(0);
             System.out.print("Qual a sua idade? => ");
-            idade = sc.nextInt();
+            idade[i] = sc.nextInt();
 
-            if (genero == 'm') {
-                totalIdadeHomem += idade;
+            if (genero[i] == 'm') {
+                totalIdadeHomem += idade[i];
                 qtdHomem++;
-            } else if (genero == 'f') {
+            } else if (genero[i] == 'f') {
                 qtdMulher++;
             }
 
-            if (genero == 'f' && idade > 20){
+            if (genero[i] == 'f' && idade[i] > 20){
                 qtdMulherAcima20Anos++;
             }
 
-            totalIdadeGrupo += idade;
+            totalIdadeGrupo += idade[i];
             i++;
         }
 
-        mediaGrupo = totalIdadeGrupo / idade;
+        mediaGrupo = totalIdadeGrupo / idade.length;
         mediaHomem = totalIdadeHomem / qtdHomem;
 
         System.out.println();

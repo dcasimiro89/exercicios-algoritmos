@@ -2,7 +2,7 @@ package passo04;
 
 import java.util.Random;
 
-public class Ex50 {
+public class Ex50_Array {
 
     public static void main(String[] args) {
 

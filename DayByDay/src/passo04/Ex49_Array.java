@@ -2,7 +2,7 @@ package passo04;
 
 import java.util.Scanner;
 
-public class Ex49 {
+public class Ex49_Array {
 
     public static void main(String[] args) {
 

@@ -30,7 +30,7 @@ public class Ex55_Desafio {
             System.out.println();
         }
 
-        if (acertou == false) {
+        if (acertou) {
             System.out.println("Não acertou nenhum número escolhido pelo PC!");
             System.out.println("Número escolhido pelo PC foi o " + numeroPC);
         }

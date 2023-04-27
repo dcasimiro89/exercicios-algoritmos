@@ -7,7 +7,7 @@ public class Ex59 {
     public static void main(String[] args) {
 
         int maiorIdade = 0;
-        int mulherMaisJovem = 100;
+        int mulherMaisJovem = 0;
         int mediaIdadeHomens;
         int qtdHomem = 0;
         int somaIdadeHomem = 0;
@@ -37,6 +37,10 @@ public class Ex59 {
             char resposta = sc.next().charAt(0);
             if (resposta == 'n') {
                 break;
+            } else {
+                if (genero == 'f') {
+                    mulherMaisJovem = idade;
+                }
             }
             System.out.println();
         }

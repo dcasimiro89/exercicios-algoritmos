@@ -17,6 +17,5 @@ public class Ex87 {
         String mensagem = sc.nextLine();
 
         gerador(mensagem);
-        
     }
 }

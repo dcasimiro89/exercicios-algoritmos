@@ -1,12 +1,8 @@
-package passo09;
+package passo10;
 
 import java.util.Scanner;
 
-public class Ex90 {
-
-    public static void somador(int x, int y) {
-        System.out.println(x + y);
-    }
+public class Ex95 {
 
     public static void main(String[] args) {
 
@@ -16,7 +12,11 @@ public class Ex90 {
         valor1 = sc.nextInt();
         valor2 = sc.nextInt();
 
-        somador(valor1, valor2);
+        System.out.println(somador(valor1, valor2));
 
+    }
+
+    public static int somador(int x, int y) {
+        return x + y;
     }
 }

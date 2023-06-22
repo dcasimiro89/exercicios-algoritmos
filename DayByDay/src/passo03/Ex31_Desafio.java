@@ -107,7 +107,7 @@ public class Ex31_Desafio {
 //        jokenPo = sc.nextInt();
 //        Pessoa p2 = new Pessoa(nome, jokenPo);
 
-        Pessoa p1 = new Pessoa("Deivison", 1);
+        Pessoa p1 = new Pessoa("Deivison", 0);
         Pessoa p2 = new Pessoa("Rose", 1);
 
         p1.resultadoJokenPo(p2);
